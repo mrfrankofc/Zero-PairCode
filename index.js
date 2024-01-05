@@ -63,14 +63,14 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./sessions`)
             process.exit(0)
          }
       } else {
-         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +916909137213 : `)))
+         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +263719647303 : `)))
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          // Ask again when entering the wrong number
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +916909137213")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +263719647303")))
 
-            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +916909137213 : `)))
+            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +263719647303 : `)))
             phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
             rl.close()
          }
@@ -87,7 +87,7 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./sessions`)
         const { connection, lastDisconnect } = s
         if (connection == "open") {
             await delay(1000 * 10)
-            await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `🪀Support/Contact Developer\n\n\n⎆Donate: https://i.ibb.co/w46VQ8D/Picsart-22-10-08-06-46-30-674.jpg\n\n⎆YouTube: https://youtube.com/@DGXeon\n\n⎆Telegram Channel: https://t.me/xeonbotinc\n\n⎆Telegram Chat: https://t.me/+AYOyJflnt-AzNGFl\n\n⎆WhatsApp Gc1: https://chat.whatsapp.com/Kjm8rnDFcpb04gQNSTbW2d\n\n⎆WhatsApp Gc2: https://chat.whatsapp.com/EEOnU0V7dl9HF1mMFO8QWa\n\n⎆WhatsApp Gc3: https://chat.whatsapp.com/Dh0lD0Ee5hN1JMFXNqtxSG\n\n⎆WhatsApp Pm: Wa.me/916909137213\n\n⎆Instagram: https://instagram.com/unicorn_xeon13\n\n⎆GitHub: https://github.com/DGXeon/\n\n⎆Blog: https://dreamguyxeonfiles.blogspot.com/2022/05/bots%20whatsapp%20mods.html?m=1\n\n\n` });
+            await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `🪀Support/Contact Developer\n\n\n⎆Donate: https://i.ibb.co/w46VQ8D/Picsart-22-10-08-06-46-30-674.jpg\n\n⎆YouTube: https://youtube.com/@mrfrankofc\n\n⎆Telegram Channel: https://t.me/mrfrankofc\n\n⎆Telegram Chat: https://t.me/+AYOyJflnt-AzNGFl\n\n⎆WhatsApp Gc1: https://chat.whatsapp.com/Kjm8rnDFcpb04gQNSTbW2d\n\n⎆WhatsApp Gc2: https://chat.whatsapp.com/EEOnU0V7dl9HF1mMFO8QWa\n\n⎆WhatsApp Gc3: https://chat.whatsapp.com/Dh0lD0Ee5hN1JMFXNqtxSG\n\n⎆WhatsApp Pm: Wa.me/26371647303\n\n⎆Instagram: https://instagram.com/mrfrankofc \n\n⎆GitHub: https://github.com/MrFr3nk/\n\n⎆Blog: https://dreamguyxeonfiles.blogspot.com/2022/05/bots%20whatsapp%20mods.html?m=1\n\n\n` });
             let sessionXeon = fs.readFileSync('./sessions/creds.json');
             await delay(1000 * 2) 
              const xeonses = await  XeonBotInc.sendMessage(XeonBotInc.user.id, { document: sessionXeon, mimetype: `application/json`, fileName: `creds.json` })
@@ -97,7 +97,7 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./sessions`)
 └┬❖  
 ┌┤✑  Thanks for using X-PairCode
 │└────────────┈ ⳹        
-│©2020-2023 XeonBotInc 
+│©2020-2024 Mr Frank Inc
 └─────────────────┈ ⳹\n\n ` }, {quoted: xeonses});
               await delay(1000 * 2) 
               process.exit(0)
